@@ -111,7 +111,8 @@ SELECT IF(5 > 4, "TRUE", "FALSE");
 -- assignment operator SELECT using :=
 SET @var5 := 5;
 SET @vara = 'a';
-SELECT @var5, @vara, @var10 := 10;
+    // both valied with set
+SELECT @var5, @vara, @var10 := 10; //should use colon with select to assign valuse 
 
 SELECT @var11 = 11; -- null
 
